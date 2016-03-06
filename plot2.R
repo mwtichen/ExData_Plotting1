@@ -8,3 +8,5 @@ data <- data[log,]
 
 data$datetime <- as.POSIXct(paste(data$Date, data$Time), format="%d/%m/%Y %H:%M:%S")
 with(data,plot(datetime,Global_active_power,type='l',ylab=gap,xlab=''))
+dev.copy(png,file="plot2.png")
+dev.off()

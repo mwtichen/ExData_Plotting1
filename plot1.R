@@ -8,3 +8,5 @@ data <- data[log,]
 
 gap <- 'Global Active Power (kilowatts)'
 hist(data$Global_active_power,xlab=gap,main="Global Active Power",col='red')
+ dev.copy(png,file="plot1.png")
+ dev.off()
