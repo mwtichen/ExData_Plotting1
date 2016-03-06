@@ -6,6 +6,7 @@ date <- as.numeric(date)
 log <- date == 222007 | date == 122007
 data <- data[log,]
 
+gap <- 'Global Active Power (kilowatts)'
 par(mfrow=c(2,2),mar=c(4,4,0.5,0.5))
 with(data,plot(datetime,Global_active_power,type='l',ylab=gap,xlab=''))
 with(data,plot(datetime,Voltage,type='l'))
